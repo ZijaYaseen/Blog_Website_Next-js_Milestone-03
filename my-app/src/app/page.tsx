@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GetBlogsData } from "@/sanity/sanity.query";
-import { log } from "console";
 
 
 export default async function Home() {
@@ -34,7 +33,7 @@ export default async function Home() {
         </section>
        
         <section className="flex flex-wrap gap-6 justify-center">
-  {BlogData.map((blog:any) => (
+  {BlogData.map((blog) => (
     <article
   key={blog.title} 
   className="flex flex-col w-[350px] h-[450px] bg-white p-2 rounded-xl gap-4
@@ -52,7 +51,7 @@ export default async function Home() {
   </div>
  <div>
  <h3 className="lg:text-[20px] text-lg font-semibold text-gray-800">{blog.title}</h3>
- <p className="mt-2 text-gray-600 flex-grow">{blog.description.flatMap((block:any) => block.children.map((child:any) => child.text))
+ <p className="mt-2 text-gray-600 flex-grow">{blog.description.flatMap((block) => block.children.map((child) => child.text))
     .join(" ")
     .split(" ")
     .slice(0, 23)
