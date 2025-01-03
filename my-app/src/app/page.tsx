@@ -36,7 +36,7 @@ export default async function Home() {
   {BlogData.map((blog) => (
     <article
   key={blog.title} 
-  className="flex flex-col w-[350px] h-[450px] bg-white p-2 rounded-xl gap-4
+  className="flex flex-col w-[350px] h-[450px] bg-white p-2 rounded-md gap-4
              hover:shadow-lg hover:transform hover:-translate-y-2 hover:duration-500 ease-in-out
              hover:shadow-blue-300 hover:border-2 hover:border-blue-300 border-2 border-transparent"
 >
@@ -44,7 +44,7 @@ export default async function Home() {
     <Image
       src={blog.thumbnailUrl} 
       alt={`Image for ${blog.title}`}
-      className="w-full h-48 rounded-md shadow-md transition-shadow shadow-gray-500"
+      className="w-full h-48 rounded-sm shadow-md transition-shadow shadow-gray-500"
       width={350} 
       height={192} 
     />
@@ -60,9 +60,9 @@ export default async function Home() {
   
 <div className="py-3">
 <Link href={`blogs/${blog.id}`} 
-       className="rounded-xl px-4 py-3
+       className="rounded-md px-4 py-3
                   transition-all duration-300 ease-in-out bg-blue-500 text-white
-                  hover:border-blue-700">
+                  hover:bg-blue-600">
        Read more
     </Link>
 </div>
