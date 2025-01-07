@@ -1,64 +1,54 @@
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook, faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import React from "react";
 
-export default function About() {
+const About = () => {
   return (
-      <div className="mt-14 bg-blue-50 text-gray-900 min-h-screen md:p-10 font-sans">
+    <section className="bg-gray-100 py-20">
+      <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="lg:text-4xl text-2xl font-bold text-center text-blue-900 lg:mb-8 mb-4">
+          About AI Innovative Cube
+        </h1>
 
-{/* Main container with flex for alignment (page) uper wala div body || or ye div conatainer...*/}
-<div className="flex flex-col md:flex-row justify-between items-center">
-  
-  {/* Text container */}
-  <div className="w-fit h-auto m-[40px] text-[20px] text-center lg:text-left">
-    HELLO,
-    <h1 className="text-2xl sm:text-3xl md:text-5xl font-black">
-    I&#39;m <span className="text-blue-900">Zija Yaseen</span>
-    <br />I am a Next.js Developer
-    </h1>
-    
-    <p className="mt-4 text-base sm:text-lg md:text-xl text-black">
-      I specialize in building modern web applications using Next.js and React, focusing on creating efficient and user-friendly experiences. My passion lies in writing clean, maintainable code while optimizing performance to ensure seamless interactions. I aim to deliver high-quality solutions that meet user needs and adhere to industry standards.
-    </p>
+        <p className="text-lg text-gray-700 mb-6">
+          <strong>AI Innovative Cube</strong> is a cutting-edge platform dedicated to exploring the world of Artificial Intelligence (AI) and its transformative impact across industries. From healthcare and finance to transportation and education, AI Innovative Cube serves as a hub for enthusiasts, professionals, and researchers to discover the latest trends, insights, and advancements in AI technology.
+        </p>
 
-    <div className="flex justify-center md:justify-start space-x-6 text-xl mt-4">
+        <div className="mb-6">
+          <h2 className="text-xl lg:text-2xl font-semibold text-blue-800">Our Mission</h2>
+          <p className="text-gray-700 mt-2">
+            At AI Innovative Cube, our mission is to empower individuals and organizations by sharing knowledge, fostering innovation, and driving awareness about the potential of AI to reshape our future. We aim to simplify complex AI concepts and make them accessible to everyone.
+          </p>
+        </div>
 
-            <a href="https://www.linkedin.com/in/zija-yaseen-0154722b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="hover:text-blue-900">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-              </a>
+        <div className="mb-6">
+          <h2 className="text-xl lg:text-2xl font-semibold text-blue-800">What We Offer</h2>
+          <ul className="list-disc pl-6 mt-2 text-gray-700">
+            <li><strong>Insightful Blogs:</strong> Dive into thoughtfully written articles that explore AI trends, breakthroughs, and applications in various sectors.</li>
+            <li><strong>Resources for Learning:</strong> Access resources designed for beginners and professionals to deepen their understanding of AI and its applications.</li>
+            <li><strong>Community Engagement:</strong> Connect with a global community of AI enthusiasts and innovators to share ideas, discuss challenges, and collaborate on projects.</li>
+            <li><strong>Practical Applications:</strong> Stay updated on how AI is being practically implemented in solving real-world problems.</li>
+          </ul>
+        </div>
 
-            <a href="https://github.com/ZijaYaseen" target="_blank" className="hover:text-blue-900">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-              </a>
+        <div>
+          <h2 className="text-xl lg:text-2xl font-semibold text-blue-800">Why Choose Us?</h2>
+          <p className="text-gray-700 mt-2">
+            <strong>Expert Insights:</strong> Get information curated by AI experts and enthusiasts passionate about the technology.  
+            <br />
+            <strong>Up-to-Date Content:</strong> Stay ahead with the latest trends and news in the ever-evolving AI landscape.  
+            <br />
+            <strong>User-Friendly Design:</strong> Our platform ensures easy navigation and a seamless user experience.
+          </p>
+        </div>
 
-              <a href="https://www.facebook.com/profile.php?id=100077844125867&mibextid=ZbWKwL" target="_blank" className="hover:text-blue-900">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
-              </a>
-
-              <a href="https://www.instagram.com/zija_yaseen?igsh=YmVhMnJnc3Bvc3cy" target="_blank" className="hover:text-blue-900">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-              </a>
-
-              <a href="#" target="_blank" className="hover:text-blue-900">
-              <FontAwesomeIcon icon={faYoutube} size="2x" />
-              </a>
-            </div>
-  </div>
-
-  {/* Image container */}
-  <div className="m-[40px]">
-    <Image 
-      src={"/model.jpeg"} 
-      alt="Model Image" 
-      width={700}  
-      height={700} 
-      className="rounded-full border-4 border-blue-900"
-    
-    />
-  </div> 
-</div>
-    </div>
-    
-    
+        <div className="mt-8">
+          <h2 className="text-xl lg:text-2xl font-semibold text-blue-800">Vision for the Future</h2>
+          <p className="text-gray-700 mt-2">
+            AI Innovative Cube envisions becoming a global leader in AI knowledge-sharing and innovation. By bridging the gap between technology and humanity, we aspire to create a world where AI empowers individuals and transforms societies.
+          </p>
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+export default About;

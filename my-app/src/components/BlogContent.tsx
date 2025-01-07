@@ -79,13 +79,13 @@ export default function BlogContent({
         {blog.description.map((block) => {
           if (block.style === "h3") {
             return (
-              <h1 key={block._key} className="lg:text-2xl text-xl font-bold text-gray-900 mb-4">
+              <h1 key={block._key} className="lg:text-2xl text-xl font-bold text-gray-900 mb-4 lg:w-[72%] mx-auto">
                 {block.children.map((child) => child.text).join(" ")}
               </h1>
             );
           }
           return (
-            <p key={block._key} className="text-gray-700 mb-4">
+            <p key={block._key} className="text-gray-700 mb-4 lg:w-[72%] mx-auto">
               {block.children.map((child) => child.text).join(" ")}
             </p>
           );
@@ -93,7 +93,7 @@ export default function BlogContent({
       </div>
 
       {/* Comment Section */}
-      <div className="mt-10">
+      <div className="mt-10 lg:w-[72%] mx-auto">
         <h2 className="text-xl font-bold text-gray-800">Comments</h2>
         <div className="mt-4 flex flex-col gap-2">
           <textarea

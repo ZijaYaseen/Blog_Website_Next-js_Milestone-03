@@ -13,9 +13,9 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center bg-blue-900 text-white z-10 ">
-      <div className="flex items-center p-3 md:mx-7 my-0 font-black text-[20px]">
-        <Image src={"/logo.png"} alt="Logo" width={60} height={60} />
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center bg-blue-900 text-white z-50 ">
+      <div className="flex items-center p-3 md:mx-7 my-0 font-black lg:text-[20px] text-sm">
+        <Image src={"/logo.png"} alt="Logo" width={60} height={60} className="w-8 h-8 lg:w-14"/>
         INNOVATIVE CUBE
       </div>
 
@@ -39,7 +39,7 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
             </svg>
           ) : (
             <svg // three line button
-              className="w-8 h-8 mr-6 text-white"
+              className="w-7 h-7 mr-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -81,9 +81,12 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
             />
           </svg>
         </button>
-        <ul className="flex flex-col gap-7 md:flex-row md:gap-16 p-4 mx-7">
+        <ul className="flex flex-col gap-7 lg:flex-row md:gap-12 p-4 mx-10 mt-14 lg:mt-0">
           <Link href="/" onClick={toggleMenu}>
             <li className="cursor-pointer text-lg">Home</li>
+          </Link>
+          <Link href="/blogs" onClick={toggleMenu}>
+            <li className="cursor-pointer text-lg">Blogs</li>
           </Link>
           <Link href="/about" onClick={toggleMenu}>
             <li className="cursor-pointer text-lg">About</li>

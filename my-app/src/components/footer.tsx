@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
           {/*Name and Description */}
           <div className="text-center md:text-left">
-            <h1 className="text-2xl font-bold">AI Blog</h1>
+            <h1 className="text-2xl font-bold">AI Blogs</h1>
             <p className="mt-2 text-sm text-gray-300">
               Empowering developers with AI-driven insights and tutorials to enhance your coding journey.
             </p>

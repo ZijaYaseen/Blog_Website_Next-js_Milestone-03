@@ -4,7 +4,7 @@ import { faInstagram, faFacebook, faGithub, faLinkedin, faYoutube } from "@forta
 
 export default function ContactUs() {
   return (
-    <div className="mt-14 bg-blue-50 min-h-screen p-10">
+    <div className="mt-14 bg-blue-50 min-h-screen lg:p-10">
       <div className="container mx-auto max-w-4xl bg-white rounded-lg shadow-lg p-6 sm:p-10">
         {/* Heading */}
         <h1 className="text-3xl font-bold text-blue-900 text-center mb-6">Contact Us</h1>
@@ -56,7 +56,7 @@ export default function ContactUs() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <FontAwesomeIcon icon={faPhone} className="text-blue-900" />
-                <span>+92 3160426977</span>
+                <span>+877 3160427677</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FontAwesomeIcon icon={faEnvelope} className="text-blue-900" />
