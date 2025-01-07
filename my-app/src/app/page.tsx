@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GetBlogsData } from "@/sanity/sanity.query";
 import BlogsSection from "@/components/BlogsSection";
 
 
