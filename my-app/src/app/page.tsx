@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
  
-    <div className="mt-14 w-full min-h-screen bg-gradient-to-t from-blue-50 to-blue-100 max-w-[1440vw]">
+    <div className="mt-14 lg:mt-0 w-full min-h-screen bg-gradient-to-t from-blue-50 to-blue-100 max-w-[1440vw]">
 
 <section className="relative">
   <Image 
