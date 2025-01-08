@@ -24,7 +24,7 @@ export default async function Home() {
     <div className="absolute inset-0 bg-black opacity-80"></div>
     
     {/* Content */}
-    <h2 className="lg:text-4xl text-2xl tracking-wider font-bold text-white relative z-10">
+    <h2 className="lg:text-4xl text-3xl tracking-wider font-bold text-white relative z-10">
       Explore The Latest AI Technology Trends And Insights
     </h2>
     <p className="mt-4 text-gray-200 lg:px-44 text-sm lg:text-base relative z-10">
