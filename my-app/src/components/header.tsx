@@ -81,7 +81,7 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
             />
           </svg>
         </button>
-        <ul className="flex flex-col gap-7 lg:flex-row md:gap-12 p-4 mx-10 mt-14 lg:mt-0">
+        <ul className="flex flex-col gap-7 md:flex-row md:gap-12 p-4 mx-10 mt-14 lg:mt-0">
           <Link href="/" onClick={toggleMenu}>
             <li className="cursor-pointer text-lg">Home</li>
           </Link>

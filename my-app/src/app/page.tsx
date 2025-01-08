@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
  
-    <div className="mt-14 lg:mt-0 w-full min-h-screen bg-gradient-to-t from-blue-50 to-blue-100 max-w-[1440vw]">
+    <div className="w-full min-h-screen bg-gradient-to-t from-blue-50 to-blue-100 max-w-[1440vw]">
 
 <section className="relative">
   <Image 
@@ -16,12 +16,12 @@ export default async function Home() {
     alt="home" 
     width={80} 
     height={80} 
-    className="w-full h-96 lg:h-auto object-cover" 
+    className="w-full h-[550px] lg:h-auto object-cover" 
   />
   
   <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
     {/* Background Overlay */}
-    <div className="absolute inset-0 bg-black opacity-60"></div>
+    <div className="absolute inset-0 bg-black opacity-70"></div>
     
     {/* Content */}
     <h2 className="lg:text-4xl text-2xl tracking-wider font-bold text-white relative z-10">
