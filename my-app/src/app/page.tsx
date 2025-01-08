@@ -16,12 +16,12 @@ export default async function Home() {
     alt="home" 
     width={80} 
     height={80} 
-    className="w-full h-[550px] lg:h-auto object-cover" 
+    className="w-full h-[750px] lg:h-auto object-cover" 
   />
   
   <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
     {/* Background Overlay */}
-    <div className="absolute inset-0 bg-black opacity-70"></div>
+    <div className="absolute inset-0 bg-black opacity-80"></div>
     
     {/* Content */}
     <h2 className="lg:text-4xl text-2xl tracking-wider font-bold text-white relative z-10">
